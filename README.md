@@ -34,6 +34,7 @@ be = BinaryEncoder()
 data = be.fit_transform(df['bin_2'])
 df = pd.concat([df,data],axis=1)
 df
+```
 # Output:
 Initial data:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/8d8972ac-6ddd-49be-8c14-bfb3b5d142b6)
@@ -46,6 +47,7 @@ Label Encoder:
 Binary Encoder:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/8dae6ff8-7d2b-487a-99ba-e8d4268aa1d2)
 Data.csv:
+```
 import pandas as pd
 df1 = pd.read_csv("data.csv")
 df.head()
@@ -73,6 +75,7 @@ be = BinaryEncoder()
 data1 = be.fit_transform(df['bin_2'])
 df= pd.concat([df1,data1],axis=1)
 df
+```
 Output:
 Initial data:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/ac1538a0-84e4-4d75-a6a5-bd0a65317937)
@@ -85,6 +88,7 @@ Label Encoder:
 Binary Encoder:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/b27bdd7c-a6fa-4b88-80a3-db7bfc040d3c)
 BMI.csv:
+```
 import pandas as pd
 df2 = pd.read_csv("/content/bmi.csv")
 df2.head()
@@ -94,12 +98,16 @@ df2  = pd.concat([df2,data2],axis=1)
 df2
 df2 = pd.get_dummies(df2, prefix=['Index'] ,columns=['Index'])
 df2
+```
 Output:
 Initial data:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/677aab48-b80d-4029-841d-be6926ca5d8e)
 Binary Encoder:
 ![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/7b33bcd7-1126-4bc6-aad8-4c5697b73ca2)
-Dummies:
+Dummies:![image](https://github.com/tharikasankar/ODD2023-Datascience-Ex-05/assets/119475507/491ea61e-3071-4d08-a17d-36349de40054)
+
+# Result:
+The Feature Generation process was performed and saved the data to a file.
 
 
 
